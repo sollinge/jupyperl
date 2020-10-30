@@ -17,10 +17,12 @@ COPY . ${HOME}
 USER root
 COPY jupyter_notebook_config.py /etc/jupyter/
 RUN chown -R ${NB_UID} ${HOME}
+RUN cpanm install DDP
 
 USER $NB_UID
 WORKDIR $HOME
 RUN iperl
+
 
 ENTRYPOINT []
 
