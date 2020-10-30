@@ -25,3 +25,4 @@ RUN iperl
 ENTRYPOINT []
 
 EXPOSE 8888
+CMD ["iperl","notebook"]
