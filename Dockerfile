@@ -17,6 +17,7 @@ COPY . ${HOME}
 USER root
 COPY jupyter_notebook_config.py /etc/jupyter/
 RUN chown -R ${NB_UID} ${HOME}
+RUN mv ${HOME}/.local/share/jupyter/kernels/iperl /usr/local/share/jupyter/kernels/
 USER ${NB_USER}
 
 USER $NB_UID
