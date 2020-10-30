@@ -17,7 +17,14 @@ COPY . ${HOME}
 USER root
 COPY jupyter_notebook_config.py /etc/jupyter/
 RUN chown -R ${NB_UID} ${HOME}
-RUN cpanm install DDP
+RUN apt-get update --fix-missing && \
+    apt-get dist-upgrade -y && \
+    apt-get install --no-install-recommends -y \
+        libssl-dev && \
+    apt-get clean && \
+    rm -rf /tmp/downloaded_packages/* && \
+    rm -rf /var/lib/apt/lists/*
+RUN /usr/local/bin/cpanm --notest install DDP LWP::Protocol::https
 
 USER $NB_UID
 WORKDIR $HOME
