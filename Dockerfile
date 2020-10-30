@@ -17,11 +17,10 @@ COPY . ${HOME}
 USER root
 COPY jupyter_notebook_config.py /etc/jupyter/
 RUN chown -R ${NB_UID} ${HOME}
-USER ${NB_USER}
-RUN iperl
 
 USER $NB_UID
 WORKDIR $HOME
+RUN iperl
 
 ENTRYPOINT []
 
