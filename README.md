@@ -9,7 +9,7 @@ Simply open https://mybinder.org/v2/gh/sollinge/jupyperl/master
 ### Run locally with Docker
 
 ```
-$ git clone https://github.com/nopid/jupyperl
+$ git clone https://github.com/sollinge/jupyperl
 $ cd jupyperl
 $ docker build -t jupyperl .
 $ docker run -v $(PWD):/home/jovyan -p 8888:8888 -it jupyperl
