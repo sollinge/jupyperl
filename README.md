@@ -1,6 +1,6 @@
 ## Perl 5 in a box
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nopid/jupyperl/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sollinge/jupyperl/master)
 
 ### Run with Binder
 
