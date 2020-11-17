@@ -4,7 +4,7 @@
 
 ### Run with Binder
 
-Simply open https://mybinder.org/v2/gh/nopid/jupyperl/master
+Simply open https://mybinder.org/v2/gh/sollinge/jupyperl/master
 
 ### Run locally with Docker
 
