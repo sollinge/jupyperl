@@ -1,10 +1,10 @@
 ## Perl 5 in a box
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sollinge/jupyperl/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sollinge/jupyperl/HEAD)
 
 ### Run with Binder
 
-Simply open https://mybinder.org/v2/gh/sollinge/jupyperl/master
+Simply open https://mybinder.org/v2/gh/sollinge/jupyperl/HEAD
 
 ### Run locally with Docker
 
